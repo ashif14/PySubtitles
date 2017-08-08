@@ -13,5 +13,9 @@ Python Script to rename subtitles to automatically fetch by VLC
 ```
 1.0
 ```
+
+## Future Committments
+Working on this to be more generic, it's just the beginning.
+
 ## Author
 **Mohd Ashif Ali** - https://github.com/ashif14
