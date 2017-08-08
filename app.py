@@ -3,11 +3,10 @@ import os
 subtitles = []
 movies = []
 
-subtitleFormats = {'srt','txt'}
-videoFormats = {'mkv', 'mp4', 'flv','json'}
+subtitleFormats = {'srt'}
+videoFormats = {'mkv', 'mp4', 'flv',}
 
 currDir = os.path.dirname(os.path.abspath(__file__))
-# print currDir
 
 # Separating movie files with  subtitles
 for filename in os.listdir(currDir):
@@ -20,10 +19,7 @@ for filename in os.listdir(currDir):
 	else:
 		break;
 
-print movies;
-print subtitles;
-
-
+# Rename Module: videos is a collection of videos you have in directory and same for subtitles
 def renameSub(videos, subtitles):
 	for movie in movies:
 		mname = movie.split('.')[0]
@@ -35,4 +31,5 @@ def renameSub(videos, subtitles):
 				break;
 
 
+# Calling renameSub module
 renameSub(movies, subtitles)
